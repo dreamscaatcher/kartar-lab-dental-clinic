@@ -5,14 +5,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-import classnames from "classnames";
+import classNames from "classnames";
 
 const NavBar = () => {
 	const currentPath = usePathname();
 
 	const links = [
 		{ label: "Home", href: "/" },
-		{ label: "Services", href: "/issues" },
+		{ label: "Services", href: "/services" },
 	];
 	return (
 		<nav className="flex space-x-6 border-b mb-5 px-5 h-14 items-center bg-blue-800 text-2xl text-white">
@@ -24,7 +24,7 @@ const NavBar = () => {
 					<Link
 						key={link.href}
 						href={link.href}
-						className={classnames({
+						className={classNames({
 							"text-yellow-600": link.href === currentPath,
 							"text-yellow-100": link.href !== currentPath,
 							"hover: text-yellow-400 transition-colors": true,

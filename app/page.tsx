@@ -3,7 +3,6 @@ import Dental from "@/public/images/Dental.jpg"
 import lab from "@/public/images/lab.png"
 
 import React from 'react'
-import NavBar from "./Navbar"
 
 const Home = () => {
   return (
